@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <!-- added placeholder image, real ones should be got from the data populated from the db-->
+    <ImageView
+        android:id="@+id/crypto_image"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/photo_title"
+        android:src="@drawable/baseline_currency_bitcoin_24"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/crypto_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/crypto_name"
+        android:layout_width="@dimen/layout_width_large"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/crypto_name"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/up_down_arrow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/crypto_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/up_down_arrow"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/photo_title"
+        android:src="@drawable/baseline_trending_down_24"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/percentage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/crypto_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="@dimen/layout_width_small"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/percentage"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/up_down_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
