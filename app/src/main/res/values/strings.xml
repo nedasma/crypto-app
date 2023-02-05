@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CryptoApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="crypto_name">Bitcoin</string>
+    <string name="percentage">50 %</string>
+    <string name="photo_title">photo title placeholder</string>
+    <string name="title">Crypto Test App</string>
+    <string name="watchlist_title">Watchlist</string>
+    <string name="home_fragment_label">Crypto List Fragment</string>
+    <string name="watchlist_fragment_label">Watchlist Fragment</string>
+    <string name="watchlist_item_deleted">Item deleted from watchlist!</string>
+    <string name="watchlist_item_added">Item added to watchlist!</string>
+</resources>
